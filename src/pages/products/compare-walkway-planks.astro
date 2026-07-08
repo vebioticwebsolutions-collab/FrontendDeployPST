@@ -1,0 +1,305 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// ==========================================
+// CUSTOM ASSET IMPORTS (placeholders — swap for dedicated model photography)
+// ==========================================
+import fold2HookImg from '../../assets/walkway/(updated)Walkway Plank Hook.jpg';
+import fold2NoHookImg from '../../assets/walkway/(updated)Walkway Plank GP Sheet.jpg';
+import fold2DogEarImg from '../../assets/walkway/(updated)Walkway Plank Anti-Skid Dimples.jpg';
+import fold3HookImg from '../../assets/walkway/(updated)Walkway Plank Stiffner.jpg';
+import fold3NoHookImg from '../../assets/walkway/(updated)Walkway Plank Oil & Gas Refinery.jpg';
+import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Rise Buildings.jpg';
+---
+
+<Layout title="Compare Walkway Plank Models | Vertex by Primesteeltech">
+
+  <main class="bg-slate-50 min-h-screen pt-24 pb-16 overflow-x-hidden font-jakarta">
+
+    <!-- Hero / Header -->
+    <section class="pb-12 sm:pb-16 border-b border-slate-200 relative">
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav class="mb-6 flex items-center justify-between flex-wrap gap-4">
+          <div class="flex text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+            <a href="/products" class="hover:text-emerald-700 transition-colors">Products</a>
+            <span class="mx-2 text-slate-300">/</span>
+            <a href="/products/walkway-planks" class="hover:text-emerald-700 transition-colors">Walkway Planks</a>
+            <span class="mx-2 text-slate-300">/</span>
+            <span class="text-emerald-700">Compare</span>
+          </div>
+
+          <a href="/products/walkway-planks" class="inline-flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest hover:text-emerald-700 transition-colors">
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+            Back to Walkway Planks
+          </a>
+        </nav>
+
+        <div class="max-w-3xl">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tight mb-4 leading-[1.1]">
+            Compare Walkway<br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-700">Plank Models</span>
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
+            Pick any two of our six 2-Fold and 3-Fold configurations to see specifications side by side.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparator -->
+    <section class="py-12 sm:py-16 bg-white border-b border-slate-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-6 relative">
+
+          <div class="hidden lg:flex absolute left-1/2 top-0 bottom-0 -translate-x-1/2 z-10 items-center">
+            <span class="w-12 h-12 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center uppercase shadow-lg border-4 border-white">vs</span>
+          </div>
+
+          <!-- Column A -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
+            <label for="modelA" class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Select Model A</label>
+            <select id="modelA" class="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-900 uppercase tracking-wide focus:outline-none focus:ring-2 focus:ring-emerald-400 mb-6">
+              <option value="fold2Hook">2-Fold With Hook</option>
+              <option value="fold2NoHook" selected>2-Fold Without Hook</option>
+              <option value="fold2DogEar">2-Fold With Dog-Ear Hook</option>
+              <option value="fold3Hook">3-Fold With Hook</option>
+              <option value="fold3NoHook">3-Fold Without Hook</option>
+              <option value="fold3DogEar">3-Fold With Dog-Ear Hook</option>
+            </select>
+
+            <div class="aspect-[4/3] bg-slate-200 rounded-lg overflow-hidden relative mb-6">
+              <img id="modelAImg" src="" alt="" class="w-full h-full object-cover" />
+              <span id="modelABadge" class="absolute top-3 left-3 px-2.5 py-1 bg-slate-900/80 text-white text-[9px] font-bold uppercase tracking-widest rounded-sm"></span>
+            </div>
+
+            <h3 id="modelAName" class="text-lg font-black text-slate-900 uppercase tracking-wide mb-2"></h3>
+            <p id="modelATagline" class="text-xs text-slate-600 font-medium leading-relaxed"></p>
+          </div>
+
+          <!-- Column B -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
+            <label for="modelB" class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Select Model B</label>
+            <select id="modelB" class="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-900 uppercase tracking-wide focus:outline-none focus:ring-2 focus:ring-emerald-400 mb-6">
+              <option value="fold2Hook">2-Fold With Hook</option>
+              <option value="fold2NoHook">2-Fold Without Hook</option>
+              <option value="fold2DogEar">2-Fold With Dog-Ear Hook</option>
+              <option value="fold3Hook">3-Fold With Hook</option>
+              <option value="fold3NoHook">3-Fold Without Hook</option>
+              <option value="fold3DogEar" selected>3-Fold With Dog-Ear Hook</option>
+            </select>
+
+            <div class="aspect-[4/3] bg-slate-200 rounded-lg overflow-hidden relative mb-6">
+              <img id="modelBImg" src="" alt="" class="w-full h-full object-cover" />
+              <span id="modelBBadge" class="absolute top-3 left-3 px-2.5 py-1 bg-slate-900/80 text-white text-[9px] font-bold uppercase tracking-widest rounded-sm"></span>
+            </div>
+
+            <h3 id="modelBName" class="text-lg font-black text-slate-900 uppercase tracking-wide mb-2"></h3>
+            <p id="modelBTagline" class="text-xs text-slate-600 font-medium leading-relaxed"></p>
+          </div>
+
+        </div>
+
+        <!-- Spec Table (continues directly below the picture columns) -->
+        <div class="mt-12 sm:mt-16 max-w-5xl mx-auto">
+          <h2 class="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-tight mb-8">Specification <span class="text-emerald-600">Comparison</span></h2>
+
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-slate-100 text-slate-900 uppercase text-[10px] font-bold">
+                <tr>
+                  <th class="px-6 py-4">Parameter</th>
+                  <th id="theadA" class="px-6 py-4">Model A</th>
+                  <th id="theadB" class="px-6 py-4">Model B</th>
+                </tr>
+              </thead>
+              <tbody id="specBody" class="divide-y divide-slate-100 text-slate-600 font-medium">
+                <!-- rows injected by script -->
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-xs text-slate-400 mt-4">Bold values indicate a difference between the two selected models.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-14 bg-white">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-tight mb-4">Ready to <span class="text-emerald-600">Configure?</span></h2>
+        <p class="text-slate-600 text-sm mb-8 max-w-xl mx-auto font-medium">Tell us your span length, load requirements, and mounting setup and we'll recommend the right plank.</p>
+        <a href="/quote" class="inline-flex h-14 items-center justify-center rounded-sm bg-emerald-600 px-8 text-[12px] font-black text-white uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl active:scale-95">
+          CONFIGURE & QUOTE
+        </a>
+      </div>
+    </section>
+
+  </main>
+</Layout>
+
+<script define:vars={{
+  images: {
+    fold2Hook: fold2HookImg.src,
+    fold2NoHook: fold2NoHookImg.src,
+    fold2DogEar: fold2DogEarImg.src,
+    fold3Hook: fold3HookImg.src,
+    fold3NoHook: fold3NoHookImg.src,
+    fold3DogEar: fold3DogEarImg.src
+  }
+}}>
+  const data = {
+    fold2Hook: {
+      name: "2-Fold With Hook",
+      tier: "2-Fold",
+      tagline: "Our standard double-fold plank with hemispherical hooks that seat directly onto ledger pipes for fast, tool-free installation.",
+      specs: {
+        "Fold Type": "2-Fold",
+        "Hook Type": "Hemispherical Hook",
+        "Board Width": "240mm",
+        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
+        "Deck Thickness": "2mm (14 Gauge)",
+        "Safety Factor": "Min 4x intended load",
+        "Ideal Use Case": "General scaffolding platforms",
+        "Price Positioning": "Standard"
+      }
+    },
+    fold2NoHook: {
+      name: "2-Fold Without Hook",
+      tier: "2-Fold",
+      tagline: "The same double-fold rigidity in a hookless format, designed to rest flush on custom bearers and non-standard support frames.",
+      specs: {
+        "Fold Type": "2-Fold",
+        "Hook Type": "No Hook (rests on bearer)",
+        "Board Width": "240mm",
+        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
+        "Deck Thickness": "2mm (14 Gauge)",
+        "Safety Factor": "Min 4x intended load",
+        "Ideal Use Case": "Custom-frame installations",
+        "Price Positioning": "Standard"
+      }
+    },
+    fold2DogEar: {
+      name: "2-Fold With Dog-Ear Hook",
+      tier: "2-Fold",
+      tagline: "A double-fold plank fitted with reinforced dog-ear hooks for extra lateral grip on ledgers exposed to vibration or heavy foot traffic.",
+      specs: {
+        "Fold Type": "2-Fold",
+        "Hook Type": "Dog-Ear Reinforced Hook",
+        "Board Width": "240mm",
+        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
+        "Deck Thickness": "2mm (14 Gauge)",
+        "Safety Factor": "Min 4x intended load",
+        "Ideal Use Case": "High-vibration sites",
+        "Price Positioning": "Value+"
+      }
+    },
+    fold3Hook: {
+      name: "3-Fold With Hook",
+      tier: "3-Fold",
+      tagline: "A wider triple-fold profile with hemispherical hooks, adding extra stiffness for longer spans and heavier industrial loads.",
+      specs: {
+        "Fold Type": "3-Fold",
+        "Hook Type": "Hemispherical Hook",
+        "Board Width": "300mm",
+        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
+        "Deck Thickness": "2mm (14 Gauge)",
+        "Safety Factor": "Min 4x intended load",
+        "Ideal Use Case": "Longer spans & heavier loads",
+        "Price Positioning": "Performance"
+      }
+    },
+    fold3NoHook: {
+      name: "3-Fold Without Hook",
+      tier: "3-Fold",
+      tagline: "Triple-fold strength in a hookless configuration, suited to fixed platforms and applications with custom mounting requirements.",
+      specs: {
+        "Fold Type": "3-Fold",
+        "Hook Type": "No Hook (rests on bearer)",
+        "Board Width": "300mm",
+        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
+        "Deck Thickness": "2mm (14 Gauge)",
+        "Safety Factor": "Min 4x intended load",
+        "Ideal Use Case": "Fixed platform installs",
+        "Price Positioning": "Performance"
+      }
+    },
+    fold3DogEar: {
+      name: "3-Fold With Dog-Ear Hook",
+      tier: "3-Fold",
+      tagline: "Our heaviest-duty plank, combining triple-fold stiffness with dog-ear hooks for maximum security on high-vibration and high-traffic sites.",
+      specs: {
+        "Fold Type": "3-Fold",
+        "Hook Type": "Dog-Ear Reinforced Hook",
+        "Board Width": "300mm",
+        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
+        "Deck Thickness": "2mm (14 Gauge)",
+        "Safety Factor": "Min 4x intended load",
+        "Ideal Use Case": "Max security, high-traffic sites",
+        "Price Positioning": "Flagship"
+      }
+    }
+  };
+
+  const selectA = document.getElementById("modelA");
+  const selectB = document.getElementById("modelB");
+  const specBody = document.getElementById("specBody");
+
+  function fillColumn(key, prefix) {
+    const model = data[key];
+    document.getElementById(prefix + "Img").src = images[key];
+    document.getElementById(prefix + "Img").alt = model.name + " Walkway Plank";
+    document.getElementById(prefix + "Badge").textContent = model.tier;
+    document.getElementById(prefix + "Name").textContent = model.name;
+    document.getElementById(prefix + "Tagline").textContent = model.tagline;
+  }
+
+  function render() {
+    const keyA = selectA.value;
+    const keyB = selectB.value;
+
+    fillColumn(keyA, "modelA");
+    fillColumn(keyB, "modelB");
+
+    document.getElementById("theadA").textContent = data[keyA].name;
+    document.getElementById("theadB").textContent = data[keyB].name;
+
+    specBody.innerHTML = "";
+    Object.keys(data[keyA].specs).forEach((label) => {
+      const valA = data[keyA].specs[label];
+      const valB = data[keyB].specs[label];
+      const differs = valA !== valB;
+
+      const tr = document.createElement("tr");
+
+      const tdLabel = document.createElement("td");
+      tdLabel.className = "px-6 py-4 text-slate-900 font-bold";
+      tdLabel.textContent = label;
+
+      const tdA = document.createElement("td");
+      tdA.className = differs ? "px-6 py-4 font-black text-emerald-700" : "px-6 py-4";
+      tdA.textContent = valA;
+
+      const tdB = document.createElement("td");
+      tdB.className = differs ? "px-6 py-4 font-black text-emerald-700" : "px-6 py-4";
+      tdB.textContent = valB;
+
+      tr.appendChild(tdLabel);
+      tr.appendChild(tdA);
+      tr.appendChild(tdB);
+      specBody.appendChild(tr);
+    });
+  }
+
+  selectA.addEventListener("change", render);
+  selectB.addEventListener("change", render);
+  render();
+</script>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+  .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+</style>
