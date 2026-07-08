@@ -54,11 +54,11 @@ import btmimg3 from '../../assets/staircase/walkway plank (1).jpg';
             </div>
             
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 uppercase tracking-tight mb-6 leading-[1.1]">
-              AntiSkid <br />
+              Anti-Skid <br />
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-700">Walkway Planks</span>
             </h1>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8 font-medium">
-              The absolute foundation of safe industrial elevation. Our premium scaffolding walkway planks are roll-formed from high-tensile steel for maximum structural rigidity. Eliminate timber hazards with India's most secure, anti-slip scaffolding boards.
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8 font-medium text-justify">
+              The absolute foundation of safe industrial elevation. Our premium GI planks are roll-formed from high-tensile steel for maximum structural rigidity. Eliminate timber hazards with India's most secure, anti-slip scaffolding boards.
             </p>
 
             <div class="flex flex-wrap gap-3 mb-10">
@@ -99,7 +99,7 @@ import btmimg3 from '../../assets/staircase/walkway plank (1).jpg';
           {[
             { img: dimplesImg, title: "Punched Surface", desc: "Aggressive dimples for maximum boot grip." },
             { img: stiffnerImg, title: "Stiffeners", desc: "Internal ribs prevent bending and sagging." },
-            { img: hookImg, title: "O-Type Hooks", desc: "Securely flush-fit onto ledger pipes." },
+            { img: hookImg, title: "Hemispherical Hooks", desc: "Securely flush-fit onto ledger pipes." },
             { img: gpSheetImg, title: "GP Sheet", desc: "Premium pre-galvanized rust-proof finish." }
           ].map(comp => (
             <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-emerald-400 transition-all duration-300">
@@ -202,10 +202,18 @@ import btmimg3 from '../../assets/staircase/walkway plank (1).jpg';
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-600 font-medium">
               {[
-                { p: "Widths", s: "240mm / 320mm", std: "BS EN 12811-1" },
-                { p: "Lengths", s: "1.0m to 3.0m", std: "System Compatible" },
-                { p: "Thickness", s: "1.5mm / 1.8mm / 2.0mm", std: "Load Class Dependant" },
-                { p: "Capacity", s: "Classes 4-6 (6 kN/m²)", std: "OSHA Rated" }
+                { p: "Steel Grade", s: "IS 2062 E250", std: "IS 2062" },
+                { p: "Board Width", s: "300mm / 280mm / 240mm", std: "System Compatible" },
+                { p: "Board Length", s: "1250mm / 2000mm / 2500mm / 3000mm (Custom on request)", std: "System Compatible" },
+                { p: "Deck Thickness", s: "2mm / 1.6mm (14/16 Gauge)", std: "IS 2062" },
+                { p: "Galvanising", s: "Min 45 µm zinc, Pre Galvanized", std: "EN ISO 1461" },
+                { p: "Stiffener Spacing", s: "500mm c/c transverse; longitudinal added above 400mm width", std: "IS 816" },
+                { p: "Safety Factor", s: "Min 4x intended load", std: "IS 3696" },
+                { p: "Deflection Limit", s: "Span / 60", std: "IS 3696-1987" },
+                { p: "Max Plank Gap", s: "25mm", std: "IS 3696" },
+                { p: "Overhang", s: "50mm min / 150mm max", std: "IS 3696" },
+                { p: "Anti-Skid Options", s: "Antiskid Dimple Plate (std), Diamond Checker (on request), Checker Plate (on request)", std: "IS 3696" },
+                { p: "Compatible Systems", s: "Tube-and-Coupler, Cuplock, Frame Scaffold, Ringlock", std: "IS 4014" }
               ].map(row => (
                 <tr>
                   <td class="px-6 py-4 text-slate-900 font-bold">{row.p}</td>
