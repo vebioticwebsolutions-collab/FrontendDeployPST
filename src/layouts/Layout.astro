@@ -40,6 +40,14 @@ const pathname = Astro.url.pathname;
       "priceRange": "$$$"
     }
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TN0XJZTGEW"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TN0XJZTGEW');
+    </script>
   </head>
   <body class="bg-[#050f09] text-white font-jakarta antialiased selection:bg-emerald-500 selection:text-[#050f09] relative">
     
