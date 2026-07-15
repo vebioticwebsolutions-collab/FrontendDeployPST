@@ -5,10 +5,10 @@ import Layout from '../../layouts/Layout.astro';
 // CUSTOM ASSET IMPORTS (placeholders — swap for dedicated model photography)
 // ==========================================
 import economyImg from '../../assets/staircase/economy blue.jpg';
-import economyPlus4Img from '../../assets/staircase/alpha blue 4 leg both handrails.jpg';
+import economyPlus4Img from '../../assets/staircase/new alpha 4 leg.jpg';
 import economyPlus8Img from '../../assets/staircase/alpha blue 8 leg.jpg';
-import alpha4Img from '../../assets/staircase/premium 4 leg.jpg';
-import alpha8Img from '../../assets/staircase/premium 8 leg.jpg';
+import alpha4Img from '../../assets/staircase/new premium 4 leg.jpg';
+import alpha8Img from '../../assets/staircase/new premium 8 leg.jpg';
 import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg';
 ---
 
@@ -63,10 +63,10 @@ import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg'
             <label for="modelA" class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Select Model A</label>
             <select id="modelA" class="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-900 uppercase tracking-wide focus:outline-none focus:ring-2 focus:ring-emerald-400 mb-6">
               <option value="economy">Economy</option>
-              <option value="economyPlus4" selected>Economy Plus 4 Leg</option>
-              <option value="economyPlus8">Economy Plus 8 Leg</option>
-              <option value="alpha4">Alpha 4 Leg</option>
-              <option value="alpha8">Alpha 8 Leg</option>
+              <option value="economyPlus4" selected>Alpha 4 Leg</option>
+              <option value="economyPlus8">Alpha 8 Leg</option>
+              <option value="alpha4">Premium 4 Leg</option>
+              <option value="alpha8">Premium 8 Leg</option>
               <option value="apex">Apex</option>
             </select>
 
@@ -84,10 +84,10 @@ import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg'
             <label for="modelB" class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Select Model B</label>
             <select id="modelB" class="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-900 uppercase tracking-wide focus:outline-none focus:ring-2 focus:ring-emerald-400 mb-6">
               <option value="economy">Economy</option>
-              <option value="economyPlus4">Economy Plus 4 Leg</option>
-              <option value="economyPlus8">Economy Plus 8 Leg</option>
-              <option value="alpha4">Alpha 4 Leg</option>
-              <option value="alpha8">Alpha 8 Leg</option>
+              <option value="economyPlus4">Alpha4 Leg</option>
+              <option value="economyPlus8">Alpha 8 Leg</option>
+              <option value="alpha4">Premium 4 Leg</option>
+              <option value="alpha8">Premium 8 Leg</option>
               <option value="apex" selected>Apex</option>
             </select>
 
@@ -169,7 +169,7 @@ import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg'
       }
     },
     economyPlus4: {
-      name: "Economy Plus 4 Leg",
+      name: "Alpha 4 Leg",
       tier: "Value",
       tagline: "Reinforced 4-leg base with wider treads, suited to medium-duration projects with higher worker traffic.",
       specs: {
@@ -185,9 +185,9 @@ import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg'
       }
     },
     economyPlus8: {
-      name: "Economy Plus 8 Leg",
+      name: "Alpha 8 Leg",
       tier: "Value+",
-      tagline: "An 8-leg version of Economy Plus for greater stability and higher-traffic mid-rise sites.",
+      tagline: "An 8-leg version of Alpha for greater stability and higher-traffic mid-rise sites.",
       specs: {
         "Leg Configuration": "8-Leg Reinforced",
         "Recommended Max Height": "Up to 40m",
@@ -201,7 +201,7 @@ import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg'
       }
     },
     alpha4: {
-      name: "Alpha 4 Leg",
+      name: "Premium 4 Leg",
       tier: "Performance",
       tagline: "Heavier-gauge steel and enclosed handrails on a 4-leg base for continuous industrial use.",
       specs: {
@@ -217,9 +217,9 @@ import apexImg from '../../assets/staircase/Mini Apex Tower Orange White BG.jpg'
       }
     },
     alpha8: {
-      name: "Alpha 8 Leg",
+      name: "Premium 8 Leg",
       tier: "Performance+",
-      tagline: "An 8-leg Alpha configuration for maximum stability on continuous, high-volume industrial sites.",
+      tagline: "An 8-leg Premium configuration for maximum stability on continuous, high-volume industrial sites.",
       specs: {
         "Leg Configuration": "8-Leg Heavy Duty",
         "Recommended Max Height": "Up to 60m",
