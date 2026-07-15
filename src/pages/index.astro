@@ -4,6 +4,11 @@ import { Image } from 'astro:assets';
 import ringlockOpt1 from '../assets/products/Ringlock Option 1.jpeg';
 import walkway from '../assets/walkway/walkway plank product image.jpg';
 import staircase from '../assets/products/(updated) Staircase Tower with clean background.jpg';
+import btmwalk from '../assets/home-page/walkway buyer guide image.jpg';
+import btmtower from '../assets/home-page/staircase buyers guide image.jpg';
+import btmring from '../assets/home-page/ringlock pic buyers guide image.jpg';
+
+
  
 // ==========================================
 // IMAGE IMPORTS (Mapped to your exact file names)
@@ -33,7 +38,7 @@ import img6_4 from '../assets/home-page/data center pic option 1.jpg';
  
 // Section 8: Product Mini-Cards
 import img8_1 from '../assets/home-page/Engineered for extreme loads pic walkway plank.jpg';
-import img8_2 from '../assets/home-page/(updated)8-2.jpg';
+import img8_2 from '../assets/home-page/mini apex tower orange.jpg';
 import img8_3 from '../assets/home-page/(updated)8-3.jpg';
  
 // Logos
@@ -472,7 +477,7 @@ const homeSchema = {
         <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-6xl">
           <a href="/products/ringlock-guide" onclick="gtag('event', 'click_buyers_guide', {'location': 'buyers_guide_section', 'guide': 'ringlock'});" class="group relative block rounded-sm overflow-hidden border border-emerald-500/10 hover:border-emerald-500/40 transition-colors">
             <div class="aspect-[4/3] overflow-hidden relative">
-              <img src={ringlockOpt1.src} alt="Construction team reviewing scaffolding plans" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={btmring.src} alt="Construction team reviewing scaffolding plans" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
             <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6 text-left">
@@ -483,7 +488,7 @@ const homeSchema = {
  
           <a href="/products/walkway-guide" onclick="gtag('event', 'click_buyers_guide', {'location': 'buyers_guide_section', 'guide': 'walkway'});" class="group relative block rounded-sm overflow-hidden border border-emerald-500/10 hover:border-emerald-500/40 transition-colors">
             <div class="aspect-[4/3] overflow-hidden relative">
-              <img src={walkway.src} alt="Worker planning walkway plank installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={btmwalk.src} alt="Worker planning walkway plank installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
             <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6 text-left">
@@ -494,7 +499,7 @@ const homeSchema = {
  
           <a href="/products/staircase-guide" onclick="gtag('event', 'click_buyers_guide', {'location': 'buyers_guide_section', 'guide': 'staircase'});" class="group relative block rounded-sm overflow-hidden border border-emerald-500/10 hover:border-emerald-500/40 transition-colors">
             <div class="aspect-[4/3] overflow-hidden relative">
-              <img src={staircase.src} alt="Team discussion at construction site" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={btmtower.src} alt="Team discussion at construction site" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             </div>
             <div class="absolute inset-x-0 bottom-0 p-5 sm:p-6 text-left">
