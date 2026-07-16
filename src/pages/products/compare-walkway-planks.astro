@@ -4,12 +4,11 @@ import Layout from '../../layouts/Layout.astro';
 // ==========================================
 // CUSTOM ASSET IMPORTS (placeholders — swap for dedicated model photography)
 // ==========================================
-import fold2HookImg from '../../assets/walkway/(updated)Walkway Plank Hook.jpg';
-import fold2NoHookImg from '../../assets/walkway/(updated)Walkway Plank GP Sheet.jpg';
-import fold2DogEarImg from '../../assets/walkway/(updated)Walkway Plank Anti-Skid Dimples.jpg';
-import fold3HookImg from '../../assets/walkway/(updated)Walkway Plank Stiffner.jpg';
-import fold3NoHookImg from '../../assets/walkway/(updated)Walkway Plank Oil & Gas Refinery.jpg';
-import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Rise Buildings.jpg';
+import fold2Img from '../../assets/walkway/(updated)Walkway Plank GP Sheet.jpg';
+import fold3Img from '../../assets/walkway/(updated)Walkway Plank Oil & Gas Refinery.jpg';
+import noHookImg from '../../assets/walkway/walkway plank product image.jpg';
+import cTypeHookImg from '../../assets/walkway/(updated)Walkway Plank Hook.jpg';
+import dogEarHookImg from '../../assets/products/(updated) Walkway Plank Option 2 .jpg';
 ---
 
 <Layout title="Compare Walkway Plank Models | Vertex by Primesteeltech">
@@ -42,7 +41,7 @@ import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Ris
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-700">Plank Models</span>
           </h1>
           <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            Pick any two of our six 2-Fold and 3-Fold configurations to see specifications side by side.
+            Pick any two of our walkway plank types to see them side by side.
           </p>
         </div>
       </div>
@@ -62,12 +61,11 @@ import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Ris
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
             <label for="modelA" class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Select Model A</label>
             <select id="modelA" class="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-900 uppercase tracking-wide focus:outline-none focus:ring-2 focus:ring-emerald-400 mb-6">
-              <option value="fold2Hook">2-Fold With Hook</option>
-              <option value="fold2NoHook" selected>2-Fold Without Hook</option>
-              <option value="fold2DogEar">2-Fold With Dog-Ear Hook</option>
-              <option value="fold3Hook">3-Fold With Hook</option>
-              <option value="fold3NoHook">3-Fold Without Hook</option>
-              <option value="fold3DogEar">3-Fold With Dog-Ear Hook</option>
+              <option value="fold2" selected>2-Fold Walkway Plank</option>
+              <option value="fold3">3-Fold Walkway Plank</option>
+              <option value="noHook">Walkway Plank Without Hook</option>
+              <option value="cTypeHook">Walkway Plank With C-Type Hook</option>
+              <option value="dogEarHook">Walkway Plank With Dog Ear Hook</option>
             </select>
 
             <div class="aspect-[4/3] bg-slate-200 rounded-lg overflow-hidden relative mb-6">
@@ -83,12 +81,11 @@ import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Ris
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
             <label for="modelB" class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Select Model B</label>
             <select id="modelB" class="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-900 uppercase tracking-wide focus:outline-none focus:ring-2 focus:ring-emerald-400 mb-6">
-              <option value="fold2Hook">2-Fold With Hook</option>
-              <option value="fold2NoHook">2-Fold Without Hook</option>
-              <option value="fold2DogEar">2-Fold With Dog-Ear Hook</option>
-              <option value="fold3Hook">3-Fold With Hook</option>
-              <option value="fold3NoHook">3-Fold Without Hook</option>
-              <option value="fold3DogEar" selected>3-Fold With Dog-Ear Hook</option>
+              <option value="fold2">2-Fold Walkway Plank</option>
+              <option value="fold3">3-Fold Walkway Plank</option>
+              <option value="noHook">Walkway Plank Without Hook</option>
+              <option value="cTypeHook">Walkway Plank With C-Type Hook</option>
+              <option value="dogEarHook" selected>Walkway Plank With Dog Ear Hook</option>
             </select>
 
             <div class="aspect-[4/3] bg-slate-200 rounded-lg overflow-hidden relative mb-6">
@@ -100,28 +97,6 @@ import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Ris
             <p id="modelBTagline" class="text-xs text-slate-600 font-medium leading-relaxed"></p>
           </div>
 
-        </div>
-
-        <!-- Spec Table (continues directly below the picture columns) -->
-        <div class="mt-12 sm:mt-16 max-w-5xl mx-auto">
-          <h2 class="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-tight mb-8">Specification <span class="text-emerald-600">Comparison</span></h2>
-
-          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-            <table class="w-full text-left text-sm">
-              <thead class="bg-slate-100 text-slate-900 uppercase text-[10px] font-bold">
-                <tr>
-                  <th class="px-6 py-4">Parameter</th>
-                  <th id="theadA" class="px-6 py-4">Model A</th>
-                  <th id="theadB" class="px-6 py-4">Model B</th>
-                </tr>
-              </thead>
-              <tbody id="specBody" class="divide-y divide-slate-100 text-slate-600 font-medium">
-                <!-- rows injected by script -->
-              </tbody>
-            </table>
-          </div>
-
-          <p class="text-xs text-slate-400 mt-4">Bold values indicate a difference between the two selected models.</p>
         </div>
 
       </div>
@@ -143,155 +118,56 @@ import fold3DogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Ris
 
 <script define:vars={{
   images: {
-    fold2Hook: fold2HookImg.src,
-    fold2NoHook: fold2NoHookImg.src,
-    fold2DogEar: fold2DogEarImg.src,
-    fold3Hook: fold3HookImg.src,
-    fold3NoHook: fold3NoHookImg.src,
-    fold3DogEar: fold3DogEarImg.src
+    fold2: fold2Img.src,
+    fold3: fold3Img.src,
+    noHook: noHookImg.src,
+    cTypeHook: cTypeHookImg.src,
+    dogEarHook: dogEarHookImg.src
   }
 }}>
   const data = {
-    fold2Hook: {
-      name: "2-Fold With Hook",
+    fold2: {
+      name: "2-Fold Walkway Plank",
       tier: "2-Fold",
-      tagline: "Our standard double-fold plank with hemispherical hooks that seat directly onto ledger pipes for fast, tool-free installation.",
-      specs: {
-        "Fold Type": "2-Fold",
-        "Hook Type": "Hemispherical Hook",
-        "Board Width": "240mm",
-        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
-        "Deck Thickness": "2mm (14 Gauge)",
-        "Safety Factor": "Min 4x intended load",
-        "Ideal Use Case": "General scaffolding platforms",
-        "Price Positioning": "Standard"
-      }
+      tagline: "Our standard double-fold plank, engineered for rigidity and reliable everyday performance on general scaffolding platforms."
     },
-    fold2NoHook: {
-      name: "2-Fold Without Hook",
-      tier: "2-Fold",
-      tagline: "The same double-fold rigidity in a hookless format, designed to rest flush on custom bearers and non-standard support frames.",
-      specs: {
-        "Fold Type": "2-Fold",
-        "Hook Type": "No Hook (rests on bearer)",
-        "Board Width": "240mm",
-        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
-        "Deck Thickness": "2mm (14 Gauge)",
-        "Safety Factor": "Min 4x intended load",
-        "Ideal Use Case": "Custom-frame installations",
-        "Price Positioning": "Standard"
-      }
-    },
-    fold2DogEar: {
-      name: "2-Fold With Dog-Ear Hook",
-      tier: "2-Fold",
-      tagline: "A double-fold plank fitted with reinforced dog-ear hooks for extra lateral grip on ledgers exposed to vibration or heavy foot traffic.",
-      specs: {
-        "Fold Type": "2-Fold",
-        "Hook Type": "Dog-Ear Reinforced Hook",
-        "Board Width": "240mm",
-        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
-        "Deck Thickness": "2mm (14 Gauge)",
-        "Safety Factor": "Min 4x intended load",
-        "Ideal Use Case": "High-vibration sites",
-        "Price Positioning": "Value+"
-      }
-    },
-    fold3Hook: {
-      name: "3-Fold With Hook",
+    fold3: {
+      name: "3-Fold Walkway Plank",
       tier: "3-Fold",
-      tagline: "A wider triple-fold profile with hemispherical hooks, adding extra stiffness for longer spans and heavier industrial loads.",
-      specs: {
-        "Fold Type": "3-Fold",
-        "Hook Type": "Hemispherical Hook",
-        "Board Width": "300mm",
-        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
-        "Deck Thickness": "2mm (14 Gauge)",
-        "Safety Factor": "Min 4x intended load",
-        "Ideal Use Case": "Longer spans & heavier loads",
-        "Price Positioning": "Performance"
-      }
+      tagline: "A wider triple-fold profile that adds extra stiffness for longer spans and heavier industrial loads."
     },
-    fold3NoHook: {
-      name: "3-Fold Without Hook",
-      tier: "3-Fold",
-      tagline: "Triple-fold strength in a hookless configuration, suited to fixed platforms and applications with custom mounting requirements.",
-      specs: {
-        "Fold Type": "3-Fold",
-        "Hook Type": "No Hook (rests on bearer)",
-        "Board Width": "300mm",
-        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
-        "Deck Thickness": "2mm (14 Gauge)",
-        "Safety Factor": "Min 4x intended load",
-        "Ideal Use Case": "Fixed platform installs",
-        "Price Positioning": "Performance"
-      }
+    noHook: {
+      name: "Walkway Plank Without Hook",
+      tier: "Hookless",
+      tagline: "A hookless format designed to rest flush on custom bearers and non-standard support frames."
     },
-    fold3DogEar: {
-      name: "3-Fold With Dog-Ear Hook",
-      tier: "3-Fold",
-      tagline: "Our heaviest-duty plank, combining triple-fold stiffness with dog-ear hooks for maximum security on high-vibration and high-traffic sites.",
-      specs: {
-        "Fold Type": "3-Fold",
-        "Hook Type": "Dog-Ear Reinforced Hook",
-        "Board Width": "300mm",
-        "Board Length Options": "1250 / 2000 / 2500 / 3000mm",
-        "Deck Thickness": "2mm (14 Gauge)",
-        "Safety Factor": "Min 4x intended load",
-        "Ideal Use Case": "Max security, high-traffic sites",
-        "Price Positioning": "Flagship"
-      }
+    cTypeHook: {
+      name: "Walkway Plank With C-Type Hook",
+      tier: "C-Type Hook",
+      tagline: "Fitted with C-type hooks that seat directly onto ledger pipes for fast, tool-free installation."
+    },
+    dogEarHook: {
+      name: "Walkway Plank With Dog Ear Hook",
+      tier: "Dog Ear Hook",
+      tagline: "Fitted with reinforced dog-ear hooks for extra lateral grip and maximum security on high-vibration, high-traffic sites."
     }
   };
 
   const selectA = document.getElementById("modelA");
   const selectB = document.getElementById("modelB");
-  const specBody = document.getElementById("specBody");
 
   function fillColumn(key, prefix) {
     const model = data[key];
     document.getElementById(prefix + "Img").src = images[key];
-    document.getElementById(prefix + "Img").alt = model.name + " Walkway Plank";
+    document.getElementById(prefix + "Img").alt = model.name;
     document.getElementById(prefix + "Badge").textContent = model.tier;
     document.getElementById(prefix + "Name").textContent = model.name;
     document.getElementById(prefix + "Tagline").textContent = model.tagline;
   }
 
   function render() {
-    const keyA = selectA.value;
-    const keyB = selectB.value;
-
-    fillColumn(keyA, "modelA");
-    fillColumn(keyB, "modelB");
-
-    document.getElementById("theadA").textContent = data[keyA].name;
-    document.getElementById("theadB").textContent = data[keyB].name;
-
-    specBody.innerHTML = "";
-    Object.keys(data[keyA].specs).forEach((label) => {
-      const valA = data[keyA].specs[label];
-      const valB = data[keyB].specs[label];
-      const differs = valA !== valB;
-
-      const tr = document.createElement("tr");
-
-      const tdLabel = document.createElement("td");
-      tdLabel.className = "px-6 py-4 text-slate-900 font-bold";
-      tdLabel.textContent = label;
-
-      const tdA = document.createElement("td");
-      tdA.className = differs ? "px-6 py-4 font-black text-emerald-700" : "px-6 py-4";
-      tdA.textContent = valA;
-
-      const tdB = document.createElement("td");
-      tdB.className = differs ? "px-6 py-4 font-black text-emerald-700" : "px-6 py-4";
-      tdB.textContent = valB;
-
-      tr.appendChild(tdLabel);
-      tr.appendChild(tdA);
-      tr.appendChild(tdB);
-      specBody.appendChild(tr);
-    });
+    fillColumn(selectA.value, "modelA");
+    fillColumn(selectB.value, "modelB");
   }
 
   selectA.addEventListener("change", render);

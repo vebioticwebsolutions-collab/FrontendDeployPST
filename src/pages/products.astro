@@ -215,65 +215,7 @@ const catalogueSchema = {
       </div>
     </section>
 
-    <section class="pb-16 pt-8 relative z-20">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="bg-white/60 backdrop-blur-xl border border-white rounded-2xl p-8 sm:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10">
-          
-          <div class="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-500/10 blur-[80px] pointer-events-none"></div>
 
-          <div class="text-center lg:text-left lg:max-w-xl relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[10px] font-bold text-emerald-800 uppercase tracking-widest mb-4">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-              Official 2026 Edition
-            </div>
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tight mb-4 leading-tight">
-              The Prime SteelTech <span class="text-emerald-600">Buyer's Guide</span>
-            </h2>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-medium mb-0">
-              Before configuring your logistics, download our comprehensive engineering document. Contains complete specifications, load-bearing matrices, material grades, and BIS/OSHA compliance data for all systems.
-            </p>
-          </div>
-
-          <div class="flex flex-col w-full lg:w-auto gap-4 relative z-10 shrink-0">
-            
-            <a href="/buyer's-guide" class="w-full inline-flex h-14 items-center justify-center gap-2 rounded-sm bg-gradient-to-b from-emerald-600 to-emerald-800 border border-emerald-900 px-8 text-sm font-black text-white shadow-[0_8px_20px_rgba(16,185,129,0.25)] hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-widest">
-              <svg class="w-5 h-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-              Download Guide
-            </a>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <a href="/contact-us" class="inline-flex h-12 items-center justify-center rounded-sm border border-slate-300 bg-white px-4 text-[10px] font-bold text-slate-700 hover:border-emerald-500 hover:text-emerald-700 shadow-sm transition-all uppercase tracking-widest text-center">
-                Get In Touch
-              </a>
-              <div class="relative" id="sales-dropdown-wrapper-products">
-                <button type="button" id="sales-dropdown-btn-products" class="w-full inline-flex h-12 items-center justify-center gap-1.5 rounded-sm border border-slate-300 bg-white px-4 text-[10px] font-bold text-slate-700 hover:border-emerald-500 hover:text-emerald-700 shadow-sm transition-all uppercase tracking-widest text-center focus:outline-none" aria-haspopup="true" aria-expanded="false" aria-label="Call Sales">
-                  Call Sales
-                  <svg id="sales-dropdown-chevron-products" class="h-3 w-3 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" /></svg>
-                </button>
-
-                <div id="sales-dropdown-menu-products" class="hidden absolute top-full left-0 sm:right-0 sm:left-auto mt-2 w-56 origin-top z-50">
-                  <div class="rounded-sm bg-white p-2 shadow-[0_15px_40px_rgba(0,0,0,0.15)] ring-1 ring-slate-200 border-t-4 border-emerald-500">
-                    <a href="tel:+919393161504" class="flex items-center gap-3 rounded-sm px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
-                      <svg class="h-4 w-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                      +91 93931 61504
-                    </a>
-                    <a href="tel:+919322321421" class="flex items-center gap-3 rounded-sm px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
-                      <svg class="h-4 w-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                      +91 93223 21421
-                    </a>
-                    <a href="tel:+919373416890" class="flex items-center gap-3 rounded-sm px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
-                      <svg class="h-4 w-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                      +91 9324560020
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
         <section class="py-20 sm:py-24 border-b border-slate-200 bg-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
@@ -302,15 +244,15 @@ const catalogueSchema = {
                 <svg class="h-6 w-6 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"/></svg>
                 <div>
                   <h4 class="text-slate-900 text-sm font-bold uppercase tracking-wider mb-1">Maximum Surface Grip</h4>
-                  <p class="text-xs text-slate-500 leading-relaxed font-medium">Aggressive punched, anti-slip surface matrix ensures superior boot traction even in wet or oily conditions.</p>
+                  <p class="text-xs text-slate-500 leading-relaxed font-medium">Prime steeltech GI walkway planks feature one of the industry's highest antiskid dimple densities of 246.11/m² .This pattern provides superior anti slip performance, enhanced grip, and improved operator safety.</p>
                 </div>
               </div>
               
               <div class="flex items-start gap-4 p-4 rounded-lg bg-slate-50 border border-slate-200 hover:border-emerald-400 hover:shadow-md transition-all duration-300">
                 <svg class="h-6 w-6 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                 <div>
-                  <h4 class="text-slate-900 text-sm font-bold uppercase tracking-wider mb-1">Unwarping Durability</h4>
-                  <p class="text-xs text-slate-500 leading-relaxed font-medium">Structural ribs designed to prevent bending and material fatigue under sustained heavy material storage.</p>
+                  <h4 class="text-slate-900 text-sm font-bold uppercase tracking-wider mb-1">Heavy-Duty Hooks</h4>
+                  <p class="text-xs text-slate-500 leading-relaxed font-medium">Heavy-duty 6 mm × 60 mm C-type hooks and 8 mm thick dog ear hooks for enhanced load-bearing capacity, featuring one of the highest hook specifications in the industry.</p>
                 </div>
               </div>
             </div>
@@ -407,7 +349,7 @@ const catalogueSchema = {
                 <svg class="h-6 w-6 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                 <div>
                   <h4 class="text-slate-900 text-sm font-bold uppercase tracking-wider mb-1">Total Compliance</h4>
-                  <p class="text-xs text-slate-500 leading-relaxed font-medium">Manufactured to strictly align with global OSHA mandates and BIS approved structural standards.</p>
+                  <p class="text-xs text-slate-500 leading-relaxed font-medium">Manufactured to strictly align with global OSHA mandates and BS/EN approved structural standards.</p>
                 </div>
               </div>
             </div>
@@ -415,6 +357,65 @@ const catalogueSchema = {
             <a href="/products/ringlock-scaffolding" class="relative group inline-flex h-14 items-center justify-center rounded-sm bg-slate-900 px-10 text-sm font-extrabold text-white shadow-lg hover:shadow-xl hover:bg-emerald-600 transition-all duration-300 uppercase tracking-widest w-full sm:w-auto">
               Learn More &rarr;
             </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+        <section class="pb-16 pt-8 relative z-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="bg-white/60 backdrop-blur-xl border border-white rounded-2xl p-8 sm:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10">
+          
+          <div class="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-500/10 blur-[80px] pointer-events-none"></div>
+
+          <div class="text-center lg:text-left lg:max-w-xl relative z-10">
+            <div class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[10px] font-bold text-emerald-800 uppercase tracking-widest mb-4">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              Official 2026 Edition
+            </div>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tight mb-4 leading-tight">
+              The Prime SteelTech <span class="text-emerald-600">Buyer's Guide</span>
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-medium mb-0">
+              Before configuring your logistics, download our comprehensive engineering document. Contains complete specifications, load-bearing matrices, material grades, and BIS/OSHA compliance data for all systems.
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full lg:w-auto gap-4 relative z-10 shrink-0">
+            
+            <a href="/buyer's-guide" class="w-full inline-flex h-14 items-center justify-center gap-2 rounded-sm bg-gradient-to-b from-emerald-600 to-emerald-800 border border-emerald-900 px-8 text-sm font-black text-white shadow-[0_8px_20px_rgba(16,185,129,0.25)] hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-widest">
+              <svg class="w-5 h-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+              Download Guide
+            </a>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <a href="/contact-us" class="inline-flex h-12 items-center justify-center rounded-sm border border-slate-300 bg-white px-4 text-[10px] font-bold text-slate-700 hover:border-emerald-500 hover:text-emerald-700 shadow-sm transition-all uppercase tracking-widest text-center">
+                Get In Touch
+              </a>
+              <div class="relative" id="sales-dropdown-wrapper-products">
+                <button type="button" id="sales-dropdown-btn-products" class="w-full inline-flex h-12 items-center justify-center gap-1.5 rounded-sm border border-slate-300 bg-white px-4 text-[10px] font-bold text-slate-700 hover:border-emerald-500 hover:text-emerald-700 shadow-sm transition-all uppercase tracking-widest text-center focus:outline-none" aria-haspopup="true" aria-expanded="false" aria-label="Call Sales">
+                  Call Sales
+                  <svg id="sales-dropdown-chevron-products" class="h-3 w-3 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+
+                <div id="sales-dropdown-menu-products" class="hidden absolute top-full left-0 sm:right-0 sm:left-auto mt-2 w-56 origin-top z-50">
+                  <div class="rounded-sm bg-white p-2 shadow-[0_15px_40px_rgba(0,0,0,0.15)] ring-1 ring-slate-200 border-t-4 border-emerald-500">
+                    <a href="tel:+919393161504" class="flex items-center gap-3 rounded-sm px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
+                      <svg class="h-4 w-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                      +91 93931 61504
+                    </a>
+                    <a href="tel:+919322321421" class="flex items-center gap-3 rounded-sm px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
+                      <svg class="h-4 w-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                      +91 93223 21421
+                    </a>
+                    <a href="tel:+919373416890" class="flex items-center gap-3 rounded-sm px-4 py-3 text-[11px] font-bold uppercase tracking-widest text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
+                      <svg class="h-4 w-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                      +91 9324560020
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -435,7 +436,7 @@ const catalogueSchema = {
             <button class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest border border-slate-300 bg-white text-slate-600 hover:border-emerald-500 hover:text-emerald-700 transition-all duration-300 shadow-sm" data-filter="scaffolding">Scaffolding</button>
             <button class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest border border-slate-300 bg-white text-slate-600 hover:border-emerald-500 hover:text-emerald-700 transition-all duration-300 shadow-sm" data-filter="formwork">Formwork</button>
             <button class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest border border-slate-300 bg-white text-slate-600 hover:border-emerald-500 hover:text-emerald-700 transition-all duration-300 shadow-sm" data-filter="pipes">Pipes & Props</button>
-            <button class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest border border-slate-300 bg-white text-slate-600 hover:border-emerald-500 hover:text-emerald-700 transition-all duration-300 shadow-sm" data-filter="hardware">Hardware</button>
+            <button class="filter-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest border border-slate-300 bg-white text-slate-600 hover:border-emerald-500 hover:text-emerald-700 transition-all duration-300 shadow-sm" data-filter="hardware">Couplers</button>
           </div>
         </div>
 
