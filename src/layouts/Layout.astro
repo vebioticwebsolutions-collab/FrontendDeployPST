@@ -48,6 +48,41 @@ const pathname = Astro.url.pathname;
       gtag('js', new Date());
       gtag('config', 'G-VGBJV8W4TL');
     </script>
+
+    <script>
+  // 1. Disable Right-Click (Context Menu)
+  document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+  });
+
+  // 2. Disable DevTools Keyboard Shortcuts
+  document.addEventListener('keydown', (event) => {
+    // Prevent F12
+    if (event.key === 'F12') {
+      event.preventDefault();
+    }
+    
+    // Prevent Ctrl+Shift+I (Windows) / Cmd+Option+I (Mac)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key.toLowerCase() === 'i') {
+      event.preventDefault();
+    }
+    
+    // Prevent Ctrl+Shift+J (Windows) / Cmd+Option+J (Mac)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key.toLowerCase() === 'j') {
+      event.preventDefault();
+    }
+    
+    // Prevent Ctrl+Shift+C (Inspect Element selection)
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key.toLowerCase() === 'c') {
+      event.preventDefault();
+    }
+    
+    // Prevent Ctrl+U / Cmd+U (View Source)
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'u') {
+      event.preventDefault();
+    }
+  });
+</script>
   </head>
   <body class="bg-[#050f09] text-white font-jakarta antialiased selection:bg-emerald-500 selection:text-[#050f09] relative">
     
@@ -174,13 +209,13 @@ const pathname = Astro.url.pathname;
                 </div>
               </div>
 
-              <a href="/quote" class="relative group inline-flex h-10 xl:h-11 items-center justify-center gap-2 rounded-sm bg-gradient-to-r from-emerald-500 to-teal-400 px-4 xl:px-6 text-[11px] xl:text-[12px] font-black uppercase tracking-[0.15em] text-[#050f09] shadow-[0_0_25px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.7)] hover:-translate-y-0.5 transition-all duration-300">
+              <a href="/contact-us" class="relative group inline-flex h-10 xl:h-11 items-center justify-center gap-2 rounded-sm bg-gradient-to-r from-emerald-500 to-teal-400 px-4 xl:px-6 text-[11px] xl:text-[12px] font-black uppercase tracking-[0.15em] text-[#050f09] shadow-[0_0_25px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.7)] hover:-translate-y-0.5 transition-all duration-300">
                 <span class="absolute -top-1.5 -right-1.5 flex h-4 w-4">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-4 w-4 bg-red-500 border-2 border-[#050f09]"></span>
                 </span>
                 <svg class="w-3.5 h-3.5 xl:w-4 xl:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                LIVE QUOTE
+                CONTACT-US
               </a>
             </div>
           </nav>
@@ -247,7 +282,7 @@ const pathname = Astro.url.pathname;
                 </a>
               </div>
             </div>
-            <a href="/quote" class={`flex w-full items-center justify-center gap-2 rounded-sm py-4 text-sm font-bold uppercase tracking-widest shadow-md transition-colors ${pathname === '/quote' ? 'bg-gradient-to-r from-emerald-500 to-teal-400 text-[#050f09]' : 'bg-white text-[#050f09] active:bg-zinc-200'}`}>
+            <a href="/contact-us" class={`flex w-full items-center justify-center gap-2 rounded-sm py-4 text-sm font-bold uppercase tracking-widest shadow-md transition-colors ${pathname === '/contact-us' ? 'bg-gradient-to-r from-emerald-500 to-teal-400 text-[#050f09]' : 'bg-white text-[#050f09] active:bg-zinc-200'}`}>
               LIVE QUOTE ENGINE
             </a>
           </div>
@@ -339,7 +374,7 @@ const pathname = Astro.url.pathname;
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 block"></span> Resources
             </h4>
             <ul class="space-y-4 font-jakarta text-sm">
-              <li><a href="/quote" class="hover:text-emerald-400 transition-colors text-white font-bold">Live Quote Engine &rarr;</a></li>
+              <li><a href="/contact-us" class="hover:text-emerald-400 transition-colors text-white font-bold">Live Quote Engine &rarr;</a></li>
               <li>
                 <a href="/standards" class="hover:text-emerald-400 transition-colors inline-flex items-center">
                   Scaffolding Standards 

@@ -1,4 +1,3 @@
-
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
@@ -8,6 +7,13 @@ import { Image } from 'astro:assets';
 // ==========================================
 import blogImg from '../assets/home-page/(updated)4-4 (1).jpg'; 
 import staircaseTowerImg from '../assets/products/(updated) Staircase Tower with clean background.jpg';
+
+// New blog images
+import walkwayPlankOption1Img from '../assets/products/Walkway Plank Option 1.jpeg';
+import walkwayPlankOption2Img from '../assets/products/Walkway Plank Option 2.jpeg';
+import walkwayPlankProductImg from '../assets/products/walkway plank product image (1).jpg';
+import ringlockProductImg from '../assets/products/Ringlock product.jpg';
+import staircaseTowerProductImg from '../assets/products/staircase tower product.jpg';
  
 // ==========================================
 // SEO & GEO-OPTIMIZED BLOG DATABASE
@@ -32,6 +38,56 @@ const blogs = [
     image: staircaseTowerImg,
     link: "/blogs/staircase-tower-worker-fatigue",
     trending: true
+  },
+  {
+    title: "The Simple Guide to Walkway Planks: 2-Fold vs 3-Fold",
+    category: "Walkway Planks",
+    date: "July 2, 2026",
+    readTime: "5 min read",
+    excerpt: "Confused between 2-fold and 3-fold walkway planks? Here's a straightforward breakdown of the differences and which one fits your site.",
+    image: walkwayPlankOption1Img,
+    link: "/blogs/2fold-vs-3fold.html",
+    trending: false
+  },
+  {
+    title: "What Makes a Walkway Plank Anti-Skid? Dimple Density Explained",
+    category: "Walkway Planks",
+    date: "July 5, 2026",
+    readTime: "6 min read",
+    excerpt: "Not all anti-skid planks are equal. Learn how dimple density actually determines grip and slip resistance on site.",
+    image: walkwayPlankOption2Img,
+    link: "/blogs/anti-skid-dimples-blog.html",
+    trending: false
+  },
+  {
+    title: "Your Supplier Shows You a GI Scaffold Plank. Here Is How You Know If It Is Any Good.",
+    category: "Walkway Planks",
+    date: "July 8, 2026",
+    readTime: "7 min read",
+    excerpt: "A practical checklist to inspect GI scaffold planks before you buy, so you don't get stuck with substandard stock.",
+    image: walkwayPlankProductImg,
+    link: "/blogs/GI-plank-description.html",
+    trending: false
+  },
+  {
+    title: "Scaffolding on High-Rise Buildings in Heavy Rain and Wind: A Safety Guide for Mumbai and MMRDA Sites",
+    category: "Safety & Compliance",
+    date: "July 11, 2026",
+    readTime: "8 min read",
+    excerpt: "Monsoon winds and rain add serious risk to high-rise scaffolding. Here's what Mumbai and MMRDA sites need to check.",
+    image: ringlockProductImg,
+    link: "/blogs/Highrise-Scaffolding.html",
+    trending: false
+  },
+  {
+    title: "Scaffolding Staircase Towers vs. Vertical Ladders: Why Tier-1 High-Rise Projects in Mumbai Mandate Stairs",
+    category: "Staircase Towers",
+    date: "July 14, 2026",
+    readTime: "6 min read",
+    excerpt: "Vertical ladders are being phased out on major Mumbai high-rises. Here's why staircase towers are now mandatory.",
+    image: staircaseTowerProductImg,
+    link: "/blogs/staircase-towers-vs-ladders-blog.html",
+    trending: false
   }
 ];
  

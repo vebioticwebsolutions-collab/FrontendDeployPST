@@ -20,11 +20,11 @@ import heroimg from '../../assets/walkway/walkway plank product image.jpg';
 // Our Models Section Assets
 // TODO: Replace these placeholder imports with dedicated photography for each of the 6 configurations
 import model2FoldHookImg from '../../assets/walkway/(updated)Walkway Plank Hook.jpg';
-import model2FoldNoHookImg from '../../assets/walkway/(updated)Walkway Plank GP Sheet.jpg';
+import model2FoldNoHookImg from '../../assets/walkway/2 fold.jpg';
 import model2FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Anti-Skid Dimples.jpg';
 import model3FoldHookImg from '../../assets/walkway/(updated)Walkway Plank Stiffner.jpg';
-import model3FoldNoHookImg from '../../assets/walkway/(updated)Walkway Plank Oil & Gas Refinery.jpg';
-import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank High-Rise Buildings.jpg';
+import model3FoldNoHookImg from '../../assets/walkway/3 fold.jpg';
+import model3FoldDogEarImg from '../../assets/walkway/dog ear hook.jpg';
 ---
 
 <Layout title="Best Heavy-Duty Walkway Planks in India | Vertex by Primesteeltech">
@@ -34,7 +34,7 @@ import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Hig
     "@type": "Product",
     "name": "Heavy-Duty Scaffolding Walkway Planks",
     "description": "OSHA-compliant modular walkway planks engineered for high-capacity industrial scaffolding.",
-    "brand": { "@type": "Brand", "name": "Vertex by Primesteeltech" },
+    "brand": { "@type": "Brand", "name": " Primesteeltech" },
     "material": "Hot-Dip Galvanized Steel",
     "offers": {
       "@type": "AggregateOffer",
@@ -91,10 +91,19 @@ import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Hig
               <a href="/quote" class="w-full sm:w-auto inline-flex h-14 items-center justify-center rounded-sm bg-emerald-600 px-8 text-[12px] font-black text-white uppercase tracking-widest hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl active:scale-95">
                 CONFIGURE & QUOTE
               </a>
-              <a href="/pdfs/planks-specs.pdf" download class="w-full sm:w-auto inline-flex h-14 items-center justify-center gap-2 rounded-sm border border-slate-300 bg-white px-8 text-[12px] font-bold text-slate-700 hover:border-emerald-500 hover:text-emerald-700 transition-all uppercase tracking-widest shadow-sm">
-                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                DOWNLOAD SPECS
-              </a>
+              <div class="dropdown relative w-full sm:w-auto">
+                <button type="button" class="dropdown-toggle group w-full sm:w-auto inline-flex h-12 items-center justify-center gap-2 rounded-[3px] border border-slate-200 bg-transparent px-8 text-[13px] font-bold text-slate-600 uppercase tracking-widest hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-600 transition-colors">
+                  <svg class="h-4 w-4 opacity-70 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  DOWNLOAD SPECS
+                  <svg class="dropdown-chevron h-3.5 w-3.5 opacity-70 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="dropdown-menu hidden absolute left-0 sm:left-auto sm:right-0 z-30 mt-2 w-full sm:w-64 rounded-sm border border-slate-200 bg-white shadow-xl overflow-hidden">
+                  <a href="/pdfs/walkway-plank-with-hook-specs.pdf" download class="block px-5 py-3 text-[12px] font-bold text-slate-700 uppercase tracking-widest hover:bg-emerald-50 hover:text-emerald-600 transition-colors border-b border-slate-100">Walkway Plank With Hook</a>
+                  <a href="/pdfs/walkway-plank-without-hook-specs.pdf" download class="block px-5 py-3 text-[12px] font-bold text-slate-700 uppercase tracking-widest hover:bg-emerald-50 hover:text-emerald-600 transition-colors border-b border-slate-100">Walkway Plank without Hook</a>
+                  
+                </div>
+              </div>
+              
             </div>
           </div>
 
@@ -182,52 +191,25 @@ import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Hig
           </a>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex flex-wrap justify-center gap-6">
           {[
             {
-              img: model2FoldHookImg,
+              img: model2FoldNoHookImg ,
               tag: "2-Fold",
-              title: "2-Fold With Hook",
+              title: "2-Fold Walkway Plank",
               desc: "Our standard double-fold plank with hemispherical hooks that seat directly onto ledger pipes for fast, tool-free installation.",
               href: "/blogs/2-fold-with-hook-walkway-plank"
             },
             {
-              img: model2FoldNoHookImg,
+              img: model3FoldNoHookImg,
               tag: "2-Fold",
-              title: "2-Fold Without Hook",
+              title: "3-Fold Walkway Plank",
               desc: "The same double-fold rigidity in a hookless format, designed to rest flush on custom bearers and non-standard support frames.",
               href: "/blogs/2-fold-without-hook-walkway-plank"
             },
-            {
-              img: model2FoldDogEarImg,
-              tag: "2-Fold",
-              title: "2-Fold With Dog-Ear Hook",
-              desc: "A double-fold plank fitted with reinforced dog-ear hooks for extra lateral grip on ledgers exposed to vibration or heavy foot traffic.",
-              href: "/blogs/2-fold-dog-ear-hook-walkway-plank"
-            },
-            {
-              img: model3FoldHookImg,
-              tag: "3-Fold",
-              title: "3-Fold With Hook",
-              desc: "A wider triple-fold profile with hemispherical hooks, adding extra stiffness for longer spans and heavier industrial loads.",
-              href: "/blogs/3-fold-with-hook-walkway-plank"
-            },
-            {
-              img: model3FoldNoHookImg,
-              tag: "3-Fold",
-              title: "3-Fold Without Hook",
-              desc: "Triple-fold strength in a hookless configuration, suited to fixed platforms and applications with custom mounting requirements.",
-              href: "/blogs/3-fold-without-hook-walkway-plank"
-            },
-            {
-              img: model3FoldDogEarImg,
-              tag: "3-Fold",
-              title: "3-Fold With Dog-Ear Hook",
-              desc: "Our heaviest-duty plank, combining triple-fold stiffness with dog-ear hooks for maximum security on high-vibration and high-traffic sites.",
-              href: "/blogs/3-fold-dog-ear-hook-walkway-plank"
-            }
+            
           ].map(model => (
-            <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-emerald-400 transition-all duration-300 flex flex-col h-full">
+            <div class="w-full sm:w-96 bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-emerald-400 transition-all duration-300 flex flex-col h-full">
               <div class="aspect-[4/3] bg-slate-200 rounded-lg mb-6 overflow-hidden relative">
                 <Image src={model.img} alt={model.title} class="w-full h-full object-cover" />
                 <span class="absolute top-3 left-3 px-2.5 py-1 bg-slate-900/80 text-white text-[9px] font-bold uppercase tracking-widest rounded-sm">{model.tag}</span>
@@ -254,10 +236,10 @@ import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Hig
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { img: dimplesImg, title: "Anti-Skid Dimples", desc: "Our special zig-zag pattern antiskid dimple surface with a density of 246.11 dimples per meter square provides superior traction." },
+            { img: dimplesImg, title: "Anti-Skid Dimples", desc: "Our special zig-zag pattern antiskid dimple surface with a density of 246 dimples per meter square provides superior traction." },
             { img: stiffnerImg, title: "Stiffeners", desc: "GP sheet moulded in U-shape internal stiffners prevent sagging and maintain structural integrity." },
             { img: hookImg, title: "C-type Hooks", desc: "60 mm hooks in E250 grade hot-rolled steel, 6mm thick, available in Hemispherical or Dog-Ear profiles for secure engagement with scaffold ledgers." },
-            { img: gpSheetImg, title: "GP Sheet", desc: "Manufactured from premium pre-galvanized steel sheets for superior corrosion resistance and durability. Manufactured by reputed companies like JSW and AMNS" }
+            { img: model3FoldDogEarImg , title: "Dog ear Hook", desc: "The reinforced dog-ear profile creates a positive mechanical lock around the ledger pipe, resisting accidental dislodgement under lateral movement or vibration. Design, material grade, and load performance are tested to comply with IS 3696, EN 12811, BS 5973, and OSHA scaffolding safety requirements, so the hook holds up to the same standards audited on Tier-1 project sites." }
           ].map(comp => (
             <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:shadow-lg hover:border-emerald-400 transition-all duration-300">
               <div class="aspect-square bg-slate-200 rounded-lg mb-6 overflow-hidden">
@@ -366,7 +348,7 @@ import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Hig
                 { p: "Deck Thickness", s: "2mm / 1.6mm (14/16 Gauge)", std: "IS 2062" },
                 { p: "Self-Weight (2000 x 300mm)", s: "15.5 kg without hooks / 16.5 kg with hooks", std: "—" },
                 { p: "Hook Type", s: "Hook 60, both ends — Hemispherical or Dog-Ear, 6mm thick", std: "—" },
-                { p: "Anti-Skid Dimple Density", s: "246.11 dimples/m², 65mm x 50mm spacing", std: "—" },
+                { p: "Anti-Skid Dimple Density", s: "246 dimples/m², 65mm x 50mm spacing", std: "—" },
                 { p: "Galvanising", s: "Min 45 µm zinc, Pre Galvanized", std: "EN ISO 1461" },
                 { p: "Stiffener Spacing", s: "500mm c/c transverse; longitudinal added above 400mm width", std: "IS 816" },
                 { p: "Live Load Design Basis", s: "Upto 450kg/m² UDL", std: "IS 3696" },
@@ -419,4 +401,58 @@ import model3FoldDogEarImg from '../../assets/walkway/(updated)Walkway Plank Hig
   .animate-pulse-slow {
     animation: pulse-glow-slow 2.4s ease-in-out infinite;
   }
+
+  .dropdown-menu.open {
+    display: block;
+  }
+  .dropdown-toggle[aria-expanded="true"] .dropdown-chevron {
+    transform: rotate(180deg);
+  }
 </style>
+
+<script>
+  function initDropdowns() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    function closeAll(except?: Element) {
+      dropdowns.forEach((dd) => {
+        if (dd === except) return;
+        const menu = dd.querySelector('.dropdown-menu');
+        const toggle = dd.querySelector('.dropdown-toggle');
+        menu?.classList.remove('open');
+        menu?.classList.add('hidden');
+        toggle?.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    dropdowns.forEach((dd) => {
+      const toggle = dd.querySelector('.dropdown-toggle');
+      const menu = dd.querySelector('.dropdown-menu');
+      if (!toggle || !menu) return;
+
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = menu.classList.contains('open');
+        closeAll(dd);
+        if (isOpen) {
+          menu.classList.remove('open');
+          menu.classList.add('hidden');
+          toggle.setAttribute('aria-expanded', 'false');
+        } else {
+          menu.classList.remove('hidden');
+          menu.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    document.addEventListener('click', () => closeAll());
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAll();
+    });
+  }
+
+  initDropdowns();
+  document.addEventListener('astro:page-load', initDropdowns);
+</script>
